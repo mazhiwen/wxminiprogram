@@ -13,12 +13,17 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "拼团"
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "text": "往期毕业学院留影"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "转发分销"
       }
+
     ]
   }
 }

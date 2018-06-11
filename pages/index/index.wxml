@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
+  <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
@@ -9,5 +9,22 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <image src='img/home_logo.jpeg' style='height:400rpx;' ></image>
+  <view>
+    <image wx:if="{{hasGetDiscountCoupon}}" src='img/home_logo.jpeg' style='height:200rpx;' ></image>
+    <button wx:else>点击领取优惠券50</button>
+  </view>
+  <!--  -->
+  <text>3人成团每人立减200元</text>
+  <view>
+    <text>拼团</text>
+    <view>
+      <view wx:for="{{pinTuanList}}">
+        <image wx:if="{{item.head}}" bindtap="bindViewTap" class="userinfo-avatar" src="{{item.head}}" mode="cover"></image> 
+        <text wx:else>邀请拼团</text>
+      </view>
+      
+    </view>
   </view>
 </view>
